@@ -1,9 +1,13 @@
 """
+Author: Brody Wells
+UCID:   xxxxxxxx
+Date:   Sept 23, 2024
+
 Example solution for Exercise 1:
 This program demonstrates good coding form, clear and useful commenting, and
 how to use conditionals to solve a quadratic equation. Additionally, it introduces
 a new concept of using try/except blocks, which may not have been covered in class yet,
-but demonstrates how to validate user input and ensure improper input does not
+but demonstrates a nice method to validate user input and ensure improper input does not
 crash your program unexpectedly.
 
 - The program prompts the user to input coefficients for a quadratic equation.
@@ -23,6 +27,8 @@ def solve_quadratic_equation():
         b = float(input("Enter the coefficient 'b': "))
         c = float(input("Enter the constant 'c': "))
     except ValueError:
+        # A value error would occur if the user entered anything other than a number, then your are forcing the program to run the 
+        #    folling code, rather than crashing, so that you can "smoothly" exit the program on your own terms.
         print("Invalid input. Please enter numerical values.")
         return
 
