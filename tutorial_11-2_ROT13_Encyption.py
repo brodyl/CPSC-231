@@ -29,7 +29,9 @@ try:
 
             else:
                 new_string += char      # Add the original character to the new string
-            char = fileHandler.read(1)
+                
+            char = fileHandler.read(1)  # Read the next character from the file.
+                                        # If there is no character then our while loop will stop
 
     # [with open("paragraph.txt", "r") as fileHandler] automatically closes the fileHandler when completed
     # But if using other methods of opening the file you would have to explicitly close the file like so:
