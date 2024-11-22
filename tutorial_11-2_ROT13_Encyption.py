@@ -10,7 +10,7 @@ the problem, ensure you always use try/except blocks when opening files on
 the computer
 '''
 
-filename = "paragrdaph.txt"
+filename = "paragraph.txt"
 new_string = ""                         # Empty string to hold the new encrypted text
 read_succesful = False                  # Flag to check if the file was read succesfully
 
