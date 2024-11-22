@@ -1,3 +1,15 @@
+
+'''
+Example script which will 
+(1) Open a text file
+(2) Encrypt the contents using the ROT13 Cipher
+(3) Overwrite the contents of teh file with the encrypted string
+
+This is only one way you could solve this problem. Whichever way you solve 
+the problem, ensure you always use try/except blocks when opening files on 
+the computer
+'''
+
 filename = "paragrdaph.txt"
 new_string = ""                         # Empty string to hold the new encrypted text
 read_succesful = False                  # Flag to check if the file was read succesfully
